@@ -1,6 +1,5 @@
 <div align="center">
   <img src="./public/logo.png" alt="GitSay Logo" width="220" />
-  <h1>GitSay</h1>
   <p><strong>AI-powered git commit message generator following the Conventional Commits specification.</strong></p>
 </div>
 
