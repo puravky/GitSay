@@ -74,7 +74,7 @@ function Navbar() {
       >
         {/* Logo */}
         <div style={{ display: "flex", alignItems: "center" }}>
-          <Image src="/logo.png" alt="GitSay" width={140} height={70} style={{ objectFit: "contain", height: "64px", width: "auto" }} priority />
+          <Image src="/logo.png" alt="GitSay" width={160} height={80} style={{ objectFit: "contain", height: "64px", width: "auto" }} priority />
         </div>
 
         {/* Center nav */}
@@ -318,12 +318,12 @@ function ToolSection() {
             <Tabs defaultValue="describe" onValueChange={(v) => { setMode(v); setResult(null); setAlternatives(null); setError(null); }}>
               <TabsList className="h-9 bg-transparent border-0 p-0 gap-0">
                 <TabsTrigger value="describe"
-                  className="rounded-none border-b-2 border-transparent data-[state=active]:border-white data-[state=active]:bg-transparent data-[state=active]:text-white text-zinc-500 text-sm px-4 pb-3 pt-0 h-9 font-medium">
-                  ✏️ Describe
+                  className="rounded-none text-white border-b-2 border-transparent data-[state=active]:border-white data-[state=active]:bg-transparent data-[state=active]:text-white  text-sm px-4 pb-3 pt-0 h-9 font-medium">
+                  ✍️ Describe
                 </TabsTrigger>
                 <TabsTrigger value="diff"
-                  className="rounded-none border-b-2 border-transparent data-[state=active]:border-white data-[state=active]:bg-transparent data-[state=active]:text-white text-zinc-500 text-sm px-4 pb-3 pt-0 h-9 font-medium">
-                  📄 Git Diff
+                  className="rounded-none text-white border-b-2 border-transparent data-[state=active]:border-white data-[state=active]:bg-transparent data-[state=active]:text-white text-sm px-4 pb-3 pt-0 h-9 font-medium">
+                  📑 Git Diff
                 </TabsTrigger>
               </TabsList>
 
@@ -332,12 +332,12 @@ function ToolSection() {
                 <TabsContent value="describe" className="mt-0">
                   <Textarea rows={5} value={input} onChange={(e) => setInput(e.target.value)}
                     placeholder="e.g. Added password validation to the login function, throws error if empty"
-                    className="bg-transparent border border-zinc-800 focus:border-zinc-600 text-zinc-100 placeholder:text-zinc-600 text-sm resize-none focus:ring-0 rounded-lg transition-colors w-full" />
+                    className="bg-transparent border border-zinc-800 focus:border-zinc-600 text-zinc-100 placeholder:text-zinc-500 text-sm resize-none focus:ring-0 rounded-lg transition-colors w-full" />
                 </TabsContent>
                 <TabsContent value="diff" className="mt-0 space-y-2">
                   <Textarea rows={5} value={input} onChange={(e) => setInput(e.target.value)}
                     placeholder={"Paste your git diff output here...\n(run `git diff` in your terminal)"}
-                    className="bg-transparent border border-zinc-800 focus:border-zinc-600 text-zinc-100 placeholder:text-zinc-600 font-mono text-xs resize-none focus:ring-0 rounded-lg transition-colors w-full" />
+                    className="bg-transparent border border-zinc-800 focus:border-zinc-600 text-zinc-100 placeholder:text-zinc-500 text-sm resize-none focus:ring-0 rounded-lg transition-colors w-full" />
                   <p className="text-zinc-500 text-xs flex items-center gap-1.5">
                     <Terminal style={{ width: 12, height: 12 }} />
                     Run <code className="font-mono bg-zinc-900 px-1.5 py-0.5 rounded text-zinc-200 border border-zinc-700">git diff</code> in your terminal
