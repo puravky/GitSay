@@ -319,11 +319,11 @@ function ToolSection() {
               <TabsList className="h-9 bg-transparent border-0 p-0 gap-0">
                 <TabsTrigger value="describe"
                   className="rounded-none border-b-2 border-transparent data-[state=active]:border-white data-[state=active]:bg-transparent data-[state=active]:text-white text-zinc-500 text-sm px-4 pb-3 pt-0 h-9 font-medium">
-                  ✏️ Describe
+                  ✍️ Describe
                 </TabsTrigger>
                 <TabsTrigger value="diff"
                   className="rounded-none border-b-2 border-transparent data-[state=active]:border-white data-[state=active]:bg-transparent data-[state=active]:text-white text-zinc-500 text-sm px-4 pb-3 pt-0 h-9 font-medium">
-                  📄 Git Diff
+                  📑 Git Diff
                 </TabsTrigger>
               </TabsList>
 
@@ -510,9 +510,9 @@ function ToolSection() {
 
 // ─── How It Works ─────────────────────────────────────────
 const steps = [
-  { emoji: "📝", step: "01", title: "Describe or Diff", description: "Type what you changed in plain English, or paste your raw git diff output." },
+  { emoji: "✍️", step: "01", title: "Describe or Diff", description: "Type what you changed in plain English, or paste your raw git diff output." },
   { emoji: "⚡", step: "02", title: "GitSay Generates",  description: "Our AI reads your input and crafts a precise conventional commit message instantly." },
-  { emoji: "📋", step: "03", title: "Copy & Commit",     description: "One click to copy. Paste it into your terminal. Done." },
+  { emoji: "📑", step: "03", title: "Copy & Commit",     description: "One click to copy. Paste it into your terminal. Done." },
 ];
 
 function HowItWorks() {
@@ -606,7 +606,7 @@ function Footer() {
         <p className="text-sm text-zinc-500"><span className="text-white">Git</span><span className="text-violet-400">Say</span> - Built for developers who care about clean git history</p>
         <p className="text-sm text-zinc-500">
           made by <span className="text-zinc-400">Purav Kumar  ·</span>
-          <a href="mailto:puravkumaryadav@email.com" className="hover:text-violet-400 transition-colors">  puravkumaryadav@email.com</a>
+          <a href="mailto:puravkumaryadav@email.com" className="hover:text-violet-400 transition-colors">  puravkumaryadav@gmail.com</a>
         </p>
       </div>
     </footer>
