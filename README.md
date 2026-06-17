@@ -1,15 +1,6 @@
 <div align="center">
   <img src="./public/logo.png" alt="GitSay Logo" width="220" />
-  <h1>GitSay</h1>
   <p><strong>AI-powered git commit message generator following the Conventional Commits specification.</strong></p>
-  
-  <p>
-    <a href="#key-features">Key Features</a> •
-    <a href="#tech-stack">Tech Stack</a> •
-    <a href="#getting-started">Getting Started</a> •
-    <a href="#how-it-works">How It Works</a> •
-    <a href="#project-structure">Project Structure</a>
-  </p>
 </div>
 
 ---
@@ -49,57 +40,6 @@
 ---
 
 ## 🚀 Getting Started
-
-### Prerequisites
-
-You must have [Bun](https://bun.sh/) installed on your machine.
-
-### Installation
-
-1. Clone the repository and navigate into the folder:
-   ```bash
-   cd gitSay
-   ```
-
-2. Install dependencies:
-   ```bash
-   bun install
-   ```
-
-### Configuration
-
-Create a `.env.local` file in the root directory and add your Groq API key:
-
-```env
-GROQ_API_KEY=your_groq_api_key_here
-```
-
-> [!TIP]
-> You can obtain a free API key by signing up at [Groq Console](https://console.groq.com/).
-
-### Running the Application
-
-Start the local development server:
-
-```bash
-bun run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to start generating commits.
-
-### Building for Production
-
-Compile a production-optimized build:
-
-```bash
-bun run build
-```
-
-Run the production build:
-
-```bash
-bun run start
-```
 
 ---
 
@@ -155,4 +95,4 @@ GitSay processes your inputs server-side using standard LLM system prompts struc
 
 ## 🤝 Contributing & Support
 
-Created with ❤️ by **Purav Kumar** ([puravkumaryadav@email.com](mailto:puravkumaryadav@email.com)) for developers everywhere. Feel free to open issues or pull requests to improve the tool!
+Created with ❤️ by **Purav Kumar** ([puravkumaryadav@email.com](mailto:puravkumaryadav@email.com)) for developers everywhere.
