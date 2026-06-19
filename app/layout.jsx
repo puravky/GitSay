@@ -1,5 +1,6 @@
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata = {
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         style={{ backgroundColor: "#09090b" }}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
